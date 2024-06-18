@@ -1,5 +1,5 @@
 # current-weather-proxy
-Proxy that abstracts front end from weather API.
+Abstracts front end from weather API.
 
 # Technology
 
