@@ -22,7 +22,7 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    response = RedirectResponse(url="/current/weather", status_code=200)
+    response = RedirectResponse(url="/current/weather", status_code=301)
     return response
 
 
