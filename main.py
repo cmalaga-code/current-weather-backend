@@ -28,9 +28,9 @@ def root():
 
 @app.get("/current/weather")
 def get_weather(lat: str, long: str):
-    query = (f"{os.environ.get("CURRENT_WEATHER_ENDPOINT")}lat={lat}&lon={long}&units="
-             f"{os.environ.get("CURRENT_WEATHER_UNITS")}&lang={os.environ.get("CURRENT_WEATHER_LANG")}"
-             f"&appid={os.environ.get("CURRENT_WEATHER_KEY")}")
+    query = (f"{os.environ.get('CURRENT_WEATHER_ENDPOINT')}lat={lat}&lon={long}&units="
+             f"{os.environ.get('CURRENT_WEATHER_UNITS')}&lang={os.environ.get('CURRENT_WEATHER_LANG')}"
+             f"&appid={os.environ.get('CURRENT_WEATHER_KEY')}")
 
     response = get(query)
 
