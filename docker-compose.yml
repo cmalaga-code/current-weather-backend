@@ -1,0 +1,11 @@
+services:
+  appserver:
+    build: ./backend
+    container_name: current_weather_appserver
+    ports:
+      - "80:10000"
+    environment:
+      - CURRENT_WEATHER_KEY=${CURRENT_WEATHER_KEY}
+      - CURRENT_WEATHER_ENDPOINT=${CURRENT_WEATHER_ENDPOINT}
+      - CURRENT_WEATHER_UNITS=${CURRENT_WEATHER_UNITS}
+      - CURRENT_WEATHER_LANG=${CURRENT_WEATHER_LANG}
